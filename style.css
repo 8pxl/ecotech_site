@@ -32,6 +32,7 @@ body{
     width: 16vmin;
     cursor: pointer;
     pointer-events: none;
+    padding-top: 1vh;
 }
 
 nav{
@@ -43,13 +44,13 @@ nav{
 nav ul li{
     list-style: none;
     display: inline-block;
-    margin-left: 0.5vw;
+    /* margin-left: 0.0vw; */
 }
 
 nav ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: 13px;
+    font-size: 0.2em;
 }
 
 #left-half {
@@ -139,4 +140,13 @@ p {
 
 .card p {
     font-size: 0.1em;
+}
+
+.down-arrow {
+    color: #E4FDE1;
+    position: absolute;
+    top: 2%;
+    left: 87%;
+    /* font-size: 1px; */
+    width: 5vw;
 }
