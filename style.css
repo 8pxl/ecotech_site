@@ -90,8 +90,10 @@ nav ul li a{
     font-size: 5em;
 }
 
-p {
+#left-half p {
     /* text-indent: 2vw; */
+    color: #B7BFB6;
+    font-size: 1.4em;
     width: 40vw;
 }
 
@@ -143,10 +145,36 @@ p {
 }
 
 .down-arrow {
-    color: #E4FDE1;
+    color: white;
+    font-size: 1.5em;
     position: absolute;
-    top: 2%;
-    left: 87%;
-    /* font-size: 1px; */
-    width: 5vw;
+    top: 25%;
+    left: 25%;
+    width: 3vw;
+    height: 3vw;
+    transition: all 0.5s;
+}
+
+.next-arrow {
+    /* background-color: black; */
+    position: absolute;
+    top: calc(73% - 3vw);
+    left: calc(50% - 3vw);
+    width: 3vw;
+    height: 3vw;
+    border-radius: 50%;
+    /* transform: translate(-50%, -50%); */
+
+    /* display: flex; */
+    transition: all 0.3s;
+}
+
+.next-arrow:hover {
+    background-color: #202721;
+    width: 3vw;
+    height: 3vw;
+}
+
+.down-arrow:hover {
+    top: 40%;
 }
