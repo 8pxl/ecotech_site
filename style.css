@@ -127,7 +127,7 @@ nav ul li a{
     /* position: absolute; */
 }
 
-/* .c1{
+.c1{
     background-image: url(images/cat1.jpg);
 }
 
@@ -141,7 +141,7 @@ nav ul li a{
 
 .c4{
     background-image: url(images/cat4.jpg);
-} */
+}
 
 .card:hover{
     transform: translateY(-10px);
