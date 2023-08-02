@@ -18,8 +18,9 @@ function arrowHandler() {
     left.dataset.position = -50;
     left.style.top = "-100%";
     
+    cardpct = 0;
     for (const card of cards) {
-        card.style.left = `${5.4 - (2.75)}vw`;
+        card.style.left = `${5.4}vw`;
     }
     console.log(right.style.left);
 }
@@ -66,10 +67,10 @@ window.onwheel = (e) => {
     
     for (const card of cards) {
         card.style.left = `${5.4 - (2.75 * cardpct)}vw`;
-        card.animate(
-            {left: `${card.style.left}`},
-            {duration: 1400, fill: "both"}
-        );
+        // card.animate(
+        //     {left: `${card.style.left}`},
+        //     {duration: 1400, fill: "both"}
+        // );
     }
     console.log(right.style.left);
 }
