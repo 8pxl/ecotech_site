@@ -33,11 +33,72 @@ window.onload = () => {
     for (const arrow of arrows) {
         arrow.addEventListener("click", arrowHandler);
     }
+
+
+    // var $card = $(".card");
+    // $card.click(function resize(e) { 
+    //     console.log(($(this).hasClass('enlarged')))
+    //     if ($(this).hasClass('enlarged')) {
+    //         $(this).css({
+    //             "width": "17vw",
+    //             "height": "33vh",
+    //             "position": "relative",
+    //             "transition": "all 0s"
+    //         })
+    //     }
+    //     else {
+    //         $(this).css({
+    //             "width": "34vw",
+    //             "height": "66vh",
+    //             "position": "fixed",
+    //             "transition": "all 0s"
+    //         })
+    //     }
+    //     $(this).toggleClass('enlarged');
+    //   });
+
+    var $card = $(".card");
+    $card.click(function () {
+        var img = $(this).css("background-image");
+        $(".selected").css({
+            "background-image": img,
+            "width": "34vw",
+            "height": "66vh",
+            "opacity": "1"
+        });
+        $(".container").addClass("blur");
+        $("#exit").css({"display": "flex"});
+        
+    });
+
+    $("#exit").click(function () {
+        $(".selected").css({
+            "opacity": "0",
+            "width": "0vw",
+            "height": "0vh"
+        });
+
+        $(".container").removeClass("blur");
+
+        $(this).css({
+            "display": "none"
+        });
+    });
+
 } 
 
 //50 - 0
 //2.75
 window.onmousemove = () => {
+    // for (const card of cards) {
+    //     if(card.classList.contains('enlarged'))
+    //     {
+    //         card.style.transition = ("all 0s");
+    //     }
+    //     else {
+    //         card.style.transition = ("all 0.8s");
+    //     }
+    //   }
     // right.style.left = "50%";
 
     // left.style.top = "0%";

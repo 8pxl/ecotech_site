@@ -4,91 +4,96 @@
 		<title>jt site</title>
 		<link rel = "stylesheet" href = "style.css">
 		<script src="app.js"></script>
+		<script src="jquery.js"></script>
 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	</head>
 
 	<body>	
-		<div id="left-half" data-position="0">
-			<div class="impact-text">
-				Ecotech: Cultivating Green Futures
+		<div class="container">
+			<div id="left-half" data-position="0">
+				<div class="impact-text">
+					Ecotech: Cultivating Green Futures
+				</div>
+				<p>
+					Ecotech empowers individuals with visionary ideas that leverage technology to safeguard the environment, fostering a sustainable future for all. By providing comprehensive resources and support, we strive to nurture innovation and creativity, enabling impactful solutions that preserve and protect our planet.
+				</p>
+				<!-- <i class="fa-solid fa-arrow-down-long down-arrow"></i> -->
+				<div class="next-arrow">
+					<i class="fa-solid fa-chevron-down down-arrow"></i>
+				</div>
 			</div>
-			<p>
-				Ecotech empowers individuals with visionary ideas that leverage technology to safeguard the environment, fostering a sustainable future for all. By providing comprehensive resources and support, we strive to nurture innovation and creativity, enabling impactful solutions that preserve and protect our planet.
-			</p>
-			<!-- <i class="fa-solid fa-arrow-down-long down-arrow"></i> -->
-			<div class="next-arrow">
-				<i class="fa-solid fa-chevron-down down-arrow"></i>
+
+			<div id="right-half" data-position="50">
+					<div class="col">
+						<div class="card c1">
+							<h5>cat 1</h5>
+							<p>caramels gingerbread brownie carrot cake dessert</p>
+						</div>
+		
+						<div class="card c2">
+							<h5>cat 2</h5>
+							<p>chocolate cake liquorice shortbread liquorice</p>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card c3">
+							<h5>cat 3</h5>
+							<p>candy macaroon shortbread caramels</p>
+						</div>
+		
+						<div class="card c4">
+							<h5>cat 4</h5>
+							<p>cake apple pie bear claw ice cream sweet</p>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card c1">
+							<h5>cat 4</h5>
+							<p>candy macaroon shortbread caramels</p>
+						</div>
+		
+						<div class="card c2">
+							<h5>cat 5</h5>
+							<p>cake apple pie bear claw ice cream sweet</p>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="card c3">
+							<h5>cat 6</h5>
+							<p>candy macaroon shortbread caramels</p>
+						</div>
+		
+						<div class="card c4">
+							<h5>cat 7</h5>
+							<p>cake apple pie bear claw ice cream sweet</p>
+						</div>
+					</div>
+
+
+			</div>
+
+			<div class="navbar">
+				<a href = "index.html">
+					<img src= "images/logo.png" class = "logo">
+				</a>
+				<nav>
+					<ul>
+						<li><a href = "index.html"> home</a></li>
+						<li><a href = "about.html"> about</a></li>
+						<li><a href = "inspire.html"> inspire</a></li>
+					</ul>
+				</nav>
 			</div>
 		</div>
-
-		<div id="right-half" data-position="50">
-				<div class="col">
-					<div class="card c1">
-						<h5>cat 1</h5>
-						<p>caramels gingerbread brownie carrot cake dessert</p>
-					</div>
-	
-					<div class="card c2">
-						<h5>cat 2</h5>
-						<p>chocolate cake liquorice shortbread liquorice</p>
-					</div>
-				</div>
-
-				<div class="col">
-					<div class="card c3">
-						<h5>cat 3</h5>
-						<p>candy macaroon shortbread caramels</p>
-					</div>
-	
-					<div class="card c4">
-						<h5>cat 4</h5>
-						<p>cake apple pie bear claw ice cream sweet</p>
-					</div>
-				</div>
-
-				<!-- <div class="next-arrow">
-					<i class="fa-solid fa-chevron-right down-arrow"></i>
-				</div> -->
-
-				<div class="col">
-					<div class="card c1">
-						<h5>cat 4</h5>
-						<p>candy macaroon shortbread caramels</p>
-					</div>
-	
-					<div class="card c2">
-						<h5>cat 5</h5>
-						<p>cake apple pie bear claw ice cream sweet</p>
-					</div>
-				</div>
-
-				<div class="col">
-					<div class="card c3">
-						<h5>cat 6</h5>
-						<p>candy macaroon shortbread caramels</p>
-					</div>
-	
-					<div class="card c4">
-						<h5>cat 7</h5>
-						<p>cake apple pie bear claw ice cream sweet</p>
-					</div>
-				</div>
-
-
+		<div class="selected">
+				
 		</div>
-
-		<div class="navbar">
-			<a href = "index.html">
-                <img src= "images/logo.png" class = "logo">
-            </a>
-			<nav>
-				<ul>
-					<li><a href = "index.html"> home</a></li>
-					<li><a href = "about.html"> about</a></li>
-					<li><a href = "inspire.html"> inspire</a></li>
-				</ul>
-			</nav>
+		<div id="exit">
+			<i class="fa-solid fa-x"></i>
 		</div>
 	</body>
 </html>
