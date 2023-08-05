@@ -8,7 +8,7 @@
 }
 
 .blur {
-    filter: blur(5px);
+    filter: blur(10px);
     transition: 1s;
 }
 
@@ -72,7 +72,7 @@ nav ul li a{
     top: 0vh;
 
     /* transition: top 0.8s; */
-    transition: top cubic-bezier(0,.75,.29,1) 0.4s;
+    transition: top cubic-bezier(0,.75,.29,1) 0.4s, filter 0.7s;
 }
 
 #right-half {
@@ -90,7 +90,7 @@ nav ul li a{
     
     /* transition: left 0.8s; */
 
-    transition: left cubic-bezier(0,.75,.29,1) 0.4s;
+    transition: left cubic-bezier(0,.75,.29,1) 0.4s, filter 0.7s;
     /* margin: 0; */
     /* margin-left: -vw; */
 }
@@ -181,20 +181,19 @@ nav ul li a{
     transition: all 0.3s;
 }
 
-.down-arrow:hover {
+/* .down-arrow:hover {
     top: 40%;
-}
+} */
 
-#right-half .next-arrow {
+/* #right-half .next-arrow {
     top: 50%;
     left: calc(49.5% - 3vw);
 }
 
 #right-half .down-arrow:hover {
-    /* left: calc(50% - 3vw); */
     top: 25%;
     left: 40%;
-}
+} */
 
 .selected {
     top: calc(50% - 33vh);
@@ -203,10 +202,10 @@ nav ul li a{
     height: 0vh;
     position: fixed;
     transition: background-image 1s, opacity 1s;
-    background-color: black;
+    /* background-color: black; */
     background-position: center;
     background-size: cover;
-    opacity: 0;
+    opacity: 1;
     /* z-index:2; */
 }
 

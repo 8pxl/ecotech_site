@@ -30,9 +30,9 @@ window.onload = () => {
     left = document.getElementById("left-half");
     cards = document.getElementsByClassName("card");
     arrows = document.getElementsByClassName("next-arrow");
-    for (const arrow of arrows) {
-        arrow.addEventListener("click", arrowHandler);
-    }
+    // for (const arrow of arrows) {
+    //     arrow.addEventListener("click", arrowHandler);
+    // }
 
 
     // var $card = $(".card");
@@ -57,6 +57,19 @@ window.onload = () => {
     //     $(this).toggleClass('enlarged');
     //   });
 
+    // $(".container").click(function () {
+    //     console.log($(".container").hasClass("blur"));
+    //     if($(".container").hasClass("blur")) {
+    //         $(".container").removeClass("blur");
+    //         $(".selected").css({
+    //             "opacity": "0",
+    //             "width": "0vw",
+    //             "height": "0vh"
+    //         });
+    //         $("#exit").css({"display": "none"});
+    //     }
+    // });
+    
     var $card = $(".card");
     $card.click(function () {
         var img = $(this).css("background-image");
@@ -66,7 +79,10 @@ window.onload = () => {
             "height": "66vh",
             "opacity": "1"
         });
-        $(".container").addClass("blur");
+
+        $("#left-half").addClass("blur");
+        $("#right-half").addClass("blur");
+        // $("").addClass("blur");
         $("#exit").css({"display": "flex"});
         
     });
@@ -78,7 +94,8 @@ window.onload = () => {
             "height": "0vh"
         });
 
-        $(".container").removeClass("blur");
+        $("#left-half").removeClass("blur");
+        $("#right-half").removeClass("blur");
 
         $(this).css({
             "display": "none"
