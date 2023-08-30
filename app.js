@@ -9,8 +9,8 @@ clamp = function(num, min, max) {
 };
 
 function arrowHandler() {
-    right.style.transition = "left 0.8s";
-    left.style.transition = "top 0.8s";
+    right.style.transition = "left 0.8s, filter 0.7s";
+    left.style.transition = "top 0.8s, filter 0.7s";
 
     right.dataset.position = 0;
     right.style.left = "0%";
@@ -29,10 +29,10 @@ window.onload = () => {
     right = document.getElementById("right-half");
     left = document.getElementById("left-half");
     cards = document.getElementsByClassName("card");
-    arrows = document.getElementsByClassName("next-arrow");
-    // for (const arrow of arrows) {
-    //     arrow.addEventListener("click", arrowHandler);
-    // }
+    arrows = document.getElementsByClassName("scroll-circle");
+    for (const arrow of arrows) {
+        arrow.addEventListener("click", arrowHandler);
+    }
 
 
     // var $card = $(".card");
@@ -79,6 +79,12 @@ window.onload = () => {
             "height": "66vh",
             "opacity": "1"
         });
+        $(".description").css({
+            "width": "34vw",
+            "height": "66vh",
+            "opacity": "1"
+        })
+        $(".description"). text($(this).data('text'));
 
         $("#left-half").addClass("blur");
         $("#right-half").addClass("blur");
@@ -93,6 +99,11 @@ window.onload = () => {
             "width": "0vw",
             "height": "0vh"
         });
+        $(".description").css({
+            "opacity": "0",
+            "width": "0vw",
+            "height": "0vh"
+        })
 
         $("#left-half").removeClass("blur");
         $("#right-half").removeClass("blur");
@@ -124,10 +135,10 @@ window.onmousemove = () => {
 
 window.onwheel = (e) => {
     e.preventDefault();
-    const delta = -e.deltaY/3;
+    const delta = -e.deltaY/3 - e.deltaX/3;
     right.dataset.position = clamp(parseFloat(right.dataset.position) + delta, 0, 50);
     right.style.left = `${right.dataset.position}%`;
-    right.style.transition = "left cubic-bezier(0,.75,.29,1) 0.5s";
+    right.style.transition = "left cubic-bezier(0,.75,.29,1) 0.5s, filter 0.7s";
     // right.animate(
     //     {left: `${right.dataset.position}%`},
     //     {duration: 1400, fill: "forwards"}
@@ -135,7 +146,7 @@ window.onwheel = (e) => {
 
     left.dataset.position = clamp(parseFloat(left.dataset.position) + delta, -50, 0);
     left.style.top = `${left.dataset.position * 3}%`;
-    left.style.transition = "top cubic-bezier(0,.75,.29,1) 0.5s";
+    left.style.transition = "top cubic-bezier(0,.75,.29,1) 0.5s, filter 0.7s";
     // left.animate(
     //     {top: `${left.dataset.position * 2}%`},
     //     {duration: 1200, fill: "forwards"}
