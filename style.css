@@ -101,13 +101,15 @@ nav ul li a{
     /* width: fit-content; */
     left: 5%;
     top: 30%;
-    font-size: 5em;
+    /* font-size: 5em; */
+    font-size: 70px;
 }
 
 #left-half p {
     /* text-indent: 2vw; */
     color: #B7BFB6;
-    font-size: 1.4em;
+    /* font-size: 1.4em; */
+    font-size: (70/3.5)px;
     width: 40vw;
 }
 

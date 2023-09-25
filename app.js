@@ -135,7 +135,7 @@ window.onmousemove = () => {
 
 window.onwheel = (e) => {
     e.preventDefault();
-    const delta = -e.deltaY/3 - e.deltaX/3;
+    const delta = -e.deltaY/4 - e.deltaX/4;
     right.dataset.position = clamp(parseFloat(right.dataset.position) + delta, 0, 50);
     right.style.left = `${right.dataset.position}%`;
     right.style.transition = "left cubic-bezier(0,.75,.29,1) 0.5s, filter 0.7s";
