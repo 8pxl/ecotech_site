@@ -2,7 +2,7 @@ body{
     background-color: #3B5249;
     color: #FFFF;
     display: flex;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .navbar{
@@ -44,7 +44,7 @@ nav ul li a{
 .col1,.col2,.col3{
     float:left;
     width: 25%;
-    padding-left: 8vh;
+    padding-left: 5vh;
     
     
 }
@@ -93,7 +93,7 @@ nav ul li a{
 
 .row{
     padding-top: 5%;
-    padding-left: 13%;
+    padding-left: 7%;
     
     
     
@@ -124,14 +124,15 @@ nav ul li a{
 
 .container{
     /* float: center; */
-    text-align: center;
-    
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 .textabout{
     text-align: center;
     padding-bottom: 5%;
-    padding-left: 55%;
+    padding-left: 35%;
     width:50%;
     
 }
@@ -140,9 +141,12 @@ nav ul li a{
     text-align:center;
     
     padding-top: 10%;
-    padding-left:26%;
+    
 }
 
 .section{
     
 }
+
+
+

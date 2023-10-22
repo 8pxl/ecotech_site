@@ -134,3 +134,7 @@ nav ul li a{
     left: 46.7%;
     top: 50px
 }
+
+body{ 
+    overflow-y : auto; 
+} 
