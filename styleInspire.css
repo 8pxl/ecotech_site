@@ -41,12 +41,10 @@ nav ul li a{
     font-size: 0.2em;
 }
 
-.col1,.col2,.col3{
+.col1, .col2, .col3{
     float:left;
     width: 25%;
-    padding-left: 8vh;
-    
-    
+    margin: 35px;
 }
 
 
@@ -63,7 +61,6 @@ nav ul li a{
 
 
 .c1{
-    
     background-image: url(images/cat1.jpg);
 }
 
@@ -92,11 +89,9 @@ nav ul li a{
 }
 
 .row{
-    padding-top: 5%;
-    padding-left: 13%;
-    
-    
-    
+    position:absolute;
+    left: 13%;
+    top: 15%;
     
 }
 .grid-item {
@@ -123,26 +118,19 @@ nav ul li a{
 }
 
 .container{
-    /* float: center; */
     text-align: center;
-    
+    padding-left: 45%;
 }
 
 .textabout{
-    text-align: center;
-    padding-bottom: 5%;
-    padding-left: 55%;
-    width:50%;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 30px;
     
 }
 
-.first{
-    text-align:center;
-    
-    padding-top: 10%;
-    padding-left:26%;
-}
-
-.section{
-    
+#first{
+    position: absolute;
+    left: 46.7%;
+    top: 50px
 }
