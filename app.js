@@ -73,7 +73,8 @@ window.onload = () => {
     var $card = $(".card");
     $card.click(function () {
         var img = $(this).css("background-image");
-        var link = $(this).html;
+        var link = $(this).find('a').attr('href');
+        
         $(".selected").css({
             "background-image": img,
             "width": "34vw",
@@ -90,8 +91,9 @@ window.onload = () => {
             
         })
         $(".description").html('<span class="textcontainer">' + $(this).data('text') + '</span>');
+        $(".description").append('<a href="' + link + '" class="textcontainer linkClass">link</a>');
 
-        $(".description").contents().wrap('<a href="example.com/script.php?id="></a>');
+        // $(".description textarea:contains('link')").wrap('<a href="' + link + '"></a>');
         
 
 

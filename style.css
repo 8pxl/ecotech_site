@@ -270,8 +270,14 @@ nav ul li a{
     transition: all 1s;
 }
 
-.textcontainer{
+.description span.textcontainer {
     position: relative;
     top: 10%;
-    
+}
+
+.description .linkClass {
+    position: absolute;
+    text-align: center;
+    top: 70%;
+    right:45%;
 }
