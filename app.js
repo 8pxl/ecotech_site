@@ -78,13 +78,29 @@ window.onload = () => {
             "width": "34vw",
             "height": "66vh",
             "opacity": "1"
+            
         });
         $(".description").css({
             "width": "34vw",
             "height": "66vh",
-            "opacity": "1"
+            "opacity": "1",
+            "font-size": "200%",
+            
+            
         })
         $(".description"). text($(this).data('text'));
+        $(".description").text()
+        
+
+
+        // $(".mybutton").css({
+        //     "width": "8vw",
+        //     "height": "5vh",
+        //     "opacity": "1",
+            
+        // })
+        // $(".mybutton"). text("website link");
+        // $(".button").addEventListener("click", );
 
         $("#left-half").addClass("blur");
         $("#right-half").addClass("blur");
