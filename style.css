@@ -131,6 +131,7 @@ nav ul li a{
 
 .c1{
     background-image: url(images/PlantMonitorIcon.png);
+    
 }
 
 .c2{
@@ -269,3 +270,8 @@ nav ul li a{
     transition: all 1s;
 }
 
+.textcontainer{
+    position: relative;
+    top: 10%;
+    
+}

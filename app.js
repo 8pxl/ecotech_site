@@ -73,6 +73,7 @@ window.onload = () => {
     var $card = $(".card");
     $card.click(function () {
         var img = $(this).css("background-image");
+        var link = $(this).html;
         $(".selected").css({
             "background-image": img,
             "width": "34vw",
@@ -88,8 +89,9 @@ window.onload = () => {
             
             
         })
-        $(".description"). text($(this).data('text'));
-        $(".description").text()
+        $(".description").html('<span class="textcontainer">' + $(this).data('text') + '</span>');
+
+        $(".description").contents().wrap('<a href="example.com/script.php?id="></a>');
         
 
 
