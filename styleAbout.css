@@ -1,0 +1,152 @@
+body{
+    background-color: #3B5249;
+    color: #FFFF;
+    display: flex;
+    overflow-y: auto;
+}
+
+.navbar{
+    /* margin-top: 0; */
+    height: 12%;
+    width: 100%;
+    /* letter-spacing: 1px;; */
+    font-size: 5em;
+    display: flex;   
+    /* align-items: center; */
+    position: fixed;
+}
+
+.logo{
+    width: 16vmin;
+    cursor: pointer;
+    pointer-events: none;
+    padding-top: 1vh;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    margin-right: 1.8vw;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    /* margin-left: 0.0vw; */
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.2em;
+}
+
+.col1,.col2,.col3{
+    float:left;
+    width: 25%;
+    padding-left: 5vh;
+    
+    
+}
+
+
+
+*{
+    font-family: "Cartograph CF";
+    /* letter-spacing: -1px; */
+    /* filter: blur(2px); */
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+}
+
+
+
+.c1{
+    
+    background-image: url(images/cat1.jpg);
+}
+
+.c2{
+    background-image: url(images/cat2.jpg);
+}
+
+.c3{
+    background-image: url(images/cat3.jpg);
+}
+
+.c4{
+    background-image: url(images/cat4.jpg);
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card p {
+    font-size: 0.1em;
+}
+
+.center{
+    text-align: center;
+}
+
+.row{
+    padding-top: 5%;
+    padding-left: 7%;
+    
+    
+    
+    
+}
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.card{
+    background-color:white;
+    width: 17vw;
+    height: 33vh;
+    border-radius: 1vh;
+    padding: 1vh 0.5vw;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 2vh 2.7vw;
+    background-position: center;
+    background-size: cover;
+    transition: all 0.6s;
+    position: relative;
+    left: calc(2.65vw);
+}
+
+.container{
+    /* float: center; */
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.textabout{
+    text-align: center;
+    padding-bottom: 5%;
+    padding-left: 35%;
+    width:50%;
+    
+}
+
+.first{
+    text-align:center;
+    
+    padding-top: 10%;
+    
+}
+
+.section{
+    
+}
+
+
+

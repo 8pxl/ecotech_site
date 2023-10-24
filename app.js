@@ -73,18 +73,38 @@ window.onload = () => {
     var $card = $(".card");
     $card.click(function () {
         var img = $(this).css("background-image");
+        var link = $(this).find('a').attr('href');
+        
         $(".selected").css({
             "background-image": img,
             "width": "34vw",
             "height": "66vh",
             "opacity": "1"
+            
         });
         $(".description").css({
             "width": "34vw",
             "height": "66vh",
-            "opacity": "1"
+            "opacity": "1",
+            "font-size": "200%",
+            
+            
         })
-        $(".description"). text($(this).data('text'));
+        $(".description").html('<span class="textcontainer">' + $(this).data('text') + '</span>');
+        $(".description").append('<a href="' + link + '" class="textcontainer linkClass">link</a>');
+
+        // $(".description textarea:contains('link')").wrap('<a href="' + link + '"></a>');
+        
+
+
+        // $(".mybutton").css({
+        //     "width": "8vw",
+        //     "height": "5vh",
+        //     "opacity": "1",
+            
+        // })
+        // $(".mybutton"). text("website link");
+        // $(".button").addEventListener("click", );
 
         $("#left-half").addClass("blur");
         $("#right-half").addClass("blur");
